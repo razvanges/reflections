@@ -1,0 +1,48 @@
+Using a diff tool highly reduces the effort needed to spot a problem in a text file, 
+by focussing your attention on what changed.
+
+
+
+How often to commit? one commit per logical change
+Choosing when to commit is a judgment call, and it's not always cut-and-dried. When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing.
+
+You commit all the changes required to add a new feature, which you’ve been working on for an hour.
+This is probably a good size for a commit. All the work is on a single feature, so the commit will have a clear logical purpose. After an hour, the diff will probably have a fair amount of content in it, but not too much to understand.
+
+On the other hand, sometimes after working for an hour you’ll have run into more than one natural committing point, in which case you would want to break the feature up into smaller commits. Because of this, “too big” could also be a reasonable answer here.
+
+
+You fix two small bugs in different functions and commit them both at once.
+This commit is probably too big. It would have been better to commit after the first bug fix, since the two bug fixes aren't related to each other.
+
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+Manually committing gives you the most flexibility, which creates the most meaningful commits (and messages). But it requires discipline!
+Automatically committing gives you comfort, but this will only be usefull in exceptional cases, say when there's a power outage and your unsaved/ uncommitted work would otherwise be lost, or when you go on a good track for a while then digress without realising until later, and would like to go a bit back. Rarely usefull, but still usefull sometimes.
+If I were to choose, I would go for manual commits on logical changes + auto saves as a backup. (git + a good IDE :D )
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+I think it depends on which level they're doing the versioning: repository level (git) or file level (Google Docs)
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+git log gives the history of changes to a repository, what changed and when.
+git diff shows the exact changes between 2 commits, 2 points in the history given by git log command.
+
+
+
+How might using version control make you more confident to make changes that could break something?
+VC is a safety net that allows you to freely experiment, knowing that you can always return to the comfortable places you had marked before, and you can do this in no time :-)
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+
+
+
+
