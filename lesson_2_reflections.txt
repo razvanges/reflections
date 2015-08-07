@@ -34,3 +34,25 @@ Add to the staging area only what should be in the next logical commit. Then com
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 Any experimental work, such as a big refactoring, a new architecture, etc is very well supported by branches.
 'Specialization' of the code, such as a change made only for a particular client or version of the code.
+
+
+
+How do the diagrams help you visualize the branch structure?
+It makes the connections and relations visible.
+
+
+
+git show commit_id      - shows the diff between a commit and its parent
+                        - with no arguments, shows for the tip of the current branch (Head?)
+
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches automatically integrates all changes introduced by the work done in both branches. This works only most of the times, when the differences from the tip of each branch compared to their common parent do not overlap.
+
+Diagraming tools: yUML (http://yuml.me/diagram/activity/draw) and gliffy (https://www.gliffy.com/)
+
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+auto merging saves a lot of effort when it's possible, but sometimes, this isn't really possible or even safe, so manual merging is still the best choice for those exceptional cases when changes overlap (frequently enough).
