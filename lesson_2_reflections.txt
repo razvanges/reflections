@@ -20,4 +20,17 @@ See also: #456, #789
 
 
 
+git diff        - compares working dir with staging area
+git diff --staged       - compares staging area to the last commit (head)
+git reset       - discards changes!!! (-soft|hard|mixed...)
 
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+Add to the staging area only what should be in the next logical commit. Then commit. Then repeat :-)
+
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Any experimental work, such as a big refactoring, a new architecture, etc is very well supported by branches.
+'Specialization' of the code, such as a change made only for a particular client or version of the code.
