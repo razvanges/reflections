@@ -1,0 +1,23 @@
+What happens when you initialize a repository? Why do you need to do it?
+git creates its metadata directory, and is ready to track future changes you'll inform it about. 
+
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area is a kind of buffer where you place everything you want to include in the next commit. It's a kind of logical working dir. Compared to the working directory and the repository, it is a logical subset of its files and elements. It's valuable because it allows us to sort out our bigger changes (when we've been not so disciplined :D ) and still create meaningful commits.
+
+
+
+Udacity Git Commit Message Style Guide - very useful!
+type{feat|fix|docs|style|refactor|test|chore}: subject{Use imperative style, Capital letter, no period, <50 chars long}
+
+body {optional, explains the "what" and "why", including side effects; can have bullet points -*}
+
+footer {optional, used to reference issue tracker IDs such as 
+Resolves: #123
+See also: #456, #789
+}
+
+
+
+
