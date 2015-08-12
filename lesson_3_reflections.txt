@@ -1,0 +1,10 @@
+* When would you want to use a remote repository rather than keeping all your work local?
+Whenever I care about my work :-) Local changes are inherently unsafe. A remote 
+backup is always a good idea, as it provides an extra recovery point in case 
+something bad happens with the local copy.
+
+Also, whenever I want to access my work from a different machine or share it with 
+somebody else, a remote repository is a very good solution.
+
+
+
