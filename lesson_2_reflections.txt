@@ -108,3 +108,6 @@ git merge branch1 branch2  |    Merge two branches, branch2 get merged into bran
 git branch -d name  |    Remove the branch with the specified name
 git show commitId  |    Show the changes made in this commit compared to the
                         previous version. This is working even after merging.
+--color-words | Works with diff commands, including show. Highlights the exact 
+                changes, at word level, instead of the whole line where changes
+                took place.
