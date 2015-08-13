@@ -21,4 +21,19 @@ would not become a random distraction when you're in the middle of something.
 
 
 
+* Reflect: Forks, Clones, and Branches
+  Describe the differences between forks, clones, and branches. When would you use
+  one instead of another?
+
+Forks > Clones > Branches (> stands for "includes")
+Use fork whenever you want to modify a project that you don't have write
+permissions on.
+Use clone whenever you start working on a new machine (that dosen't have the
+repository locally) or when you want a fresh copy of the repository (seldom
+needed, probably not recommended).
+Use branch whenever you start messing up with your work (in a loving way, of
+course) in a way that you feel might not end up in the master branch.
+
+
+
 
