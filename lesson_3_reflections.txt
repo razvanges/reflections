@@ -36,4 +36,18 @@ course) in a way that you feel might not end up in the master branch.
 
 
 
+* Reflect: Local copies of remote branches
+  What is the benefit of having a copy of the last known state of the remote
+  stored locally?
+
+In the process of development, you have to refer to the "current" state of the
+repository as often as possible, and a local copy of this "last known current
+state" is required for at least 3 reasons: 
+ - consistency - the remote might change while you're in the middle of a merge;
+ - performance - accessing a remote repository is far slower than accessing its
+   local copy;
+ - offline access - sometimes, remote access is simply not possible.
+
+
+
 
