@@ -50,4 +50,10 @@ state" is required for at least 3 reasons:
 
 
 
+* Reflect: Collaboration using Git and GitHub
+  How would you collaborate without using Git or GitHub? What would be easier,
+  and what would be harder?
 
+Simply put, collaboration without using Git (and GitHub) would be harder. The
+only thing that would/might be easier is the experience of learning how to use
+these tools.
