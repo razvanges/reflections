@@ -57,3 +57,61 @@ state" is required for at least 3 reasons:
 Simply put, collaboration without using Git (and GitHub) would be harder. The
 only thing that would/might be easier is the experience of learning how to use
 these tools.
+
+
+
+***
+Always have the branch you want to merge into checked out before running git
+pull, because the merge is done automatically into the checked out branch!
+Make clear distinction between the branch name and the pull request name (make
+it longer, to avoid confusion).
+
+
+
+* Reflect: When to use a separate branch
+  When would you want to make changes in a separate branch rather than directly
+  in master? What benefits does each approach have?
+
+Despite the more involved work required to make changes in a separate branch, I
+think it is the best idea whenever you collaborate on a project, as it makes it
+clear for everyone involved what is (and should remain) stable, and what is
+changing.
+However, there are probably changes that should still go directly to master,
+such as style changes (formatting code, organizing imports), which do not affect
+functionality. But this subjective, and must be discussed with the person
+responsible for maintaining the master before doing it.
+When working alone on a project, it's up to you to choose what needs a separate
+branch and what not. It might be though that the time saved by working directly
+in master is not worth it, as most merges should be automatic.
+
+-------------------------------------------------------------------------------
+
+Learned Commands Summary:
+
+git push <remote-repository = 'where'> <branch = 'what'> - publish your changes
+            to the remote repository
+            
+git pull <remote> <branch> - update your local copy with the latest changes 
+            available in the remote repo AND merge them into the checked in
+            branch. Equivalent with running the following 2 commands
+            sequentially: 
+git fetch   - update your local copy with the latest changes available in the 
+            remote repo.
+git merge <source-branch> <dest-branch> - merge changes
+            
+git stash - temporarily saves changes until later; Useful example from the git
+          man page (Interrupted workflow): When you are in the middle of
+          something, your boss comes in and demands that you fix something
+          immediately. You can use git stash like this:
+
+               # ... hack hack hack ...
+               $ git stash
+               $ edit emergency fix
+               $ git commit -a -m "Fix in a hurry"
+               $ git stash pop
+               # ... continue hacking ...
+               
+git revert  - Revert some existing commits, creating a commit with the "inverse" 
+              changes; it is a commit that effectively "undoes" other commits;
+              To discard changes, use git reset:
+git reset --hard [HEAD | HEAD^ | HEAD^^ | HEAD~3]
